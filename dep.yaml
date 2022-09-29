@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: first-deploy
+  labels:
+    app: flextest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flextest
+  template:
+    metadata:
+      labels:
+        app: flextest
+    spec:
+      containers:
+        - name: flextest
+          image: ajiqbrainx/first
+          ports:
+            - containerPort: 80

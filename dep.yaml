@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: flextest
-          image: ajiqbrainx/first
+          image: ajiqbrainx/sample
           ports:
             - containerPort: 80

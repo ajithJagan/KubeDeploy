@@ -12,4 +12,9 @@ public class KubeController {
     public String get() {
         return "Welcome to Kubernetes ....";
     }
+
+    @GetMapping(value = "/gett")
+    public String gett() {
+        return "Welcome to Docker ....";
+    }
 }

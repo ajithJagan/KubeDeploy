@@ -13,18 +13,5 @@ public class KubeController {
         return "Welcome to Kubernetes ....";
     }
 
-    @GetMapping(value = "/gett")
-    public String gett() {
-        return "Welcome to Docker ....";
-    }
 
-    @GetMapping(value = "/get")
-    public String neq() {
-        return "Welcome to Kubernetes ....";
-    }
-
-    @GetMapping(value = "/gett")
-    public String ge() {
-        return "Welcome to Docker ....";
-    }
 }

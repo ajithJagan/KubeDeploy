@@ -9,6 +9,7 @@ public class KubeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(KubeApplication.class, args);
 		System.out.println("Its Running....");
+		System.out.println("Version 2 Running...");
 	}
 
 }

@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: first-deploy-svc
+  namespace: flexcub-testing
+
+status:
+  loadBalancer: {}
+spec:
+  ports:
+    - name: first-deploy-svc
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: first-deploy
+
+  type: ClusterIP
+  sessionAffinity: None
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+  internalTrafficPolicy: Cluster

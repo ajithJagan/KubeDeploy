@@ -13,7 +13,7 @@ spec:
       port: 8080
       targetPort: 8080
   selector:
-    app: flextest
+    app: first-deploy
 
   type: ClusterIP
   sessionAffinity: None

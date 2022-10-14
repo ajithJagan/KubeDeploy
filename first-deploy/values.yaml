@@ -8,7 +8,7 @@ image:
   repository: ajiqbrainx/pipeline
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "67"
+  tag: "14"
 
 imagePullSecrets: []
 nameOverride: ""

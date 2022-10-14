@@ -11,7 +11,8 @@ public class KubeController {
     @GetMapping(value = "/get")
     public String get() {
         return "Welcome to Kubernetes ...." +
-                "Adding some Details .....";
+                "Adding some Details ....." +
+                "Working Fine.....";
     }
 
 

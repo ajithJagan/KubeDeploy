@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: backend-aji
-          image: ajiqbrainx/pipeline:9
+          image: ajiqbrainx/pipeline:10
           ports:
             - containerPort: 80

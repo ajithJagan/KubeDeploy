@@ -1,21 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: first-deploy
+  name: backend-aji
+  namespace: flexcub-testing
   labels:
-    app: flextest
+    app: backend-aji
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: flextest
+      app: backend-aji
   template:
     metadata:
       labels:
-        app: flextest
+        app: backend-aji
     spec:
       containers:
-        - name: flextest
-          image: ajiqbrainx/pipeline
+        - name: backend-aji
+          image: ajiqbrainx/pipeline:8
           ports:
             - containerPort: 80

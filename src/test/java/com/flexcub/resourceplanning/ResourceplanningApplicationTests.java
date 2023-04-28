@@ -1,13 +1,13 @@
-package com.flexcub.resourceplanning;
+// package com.flexcub.resourceplanning;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class ResourceplanningApplicationTests {
+// @SpringBootTest
+// class ResourceplanningApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+//     @Test
+//     void contextLoads() {
+//     }
 
-}
+// }

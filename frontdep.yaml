@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-deploy
+  namespace: flexcub-testing
   labels:
     app: backend
 spec:
@@ -16,22 +17,11 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ajiqbrainx/backend:1
+          image: ajiqbrainx/backend:2
           ports:
             - containerPort: 8080
 
-#Node Port service for the Azure Deployment 
- apiVersion: apps/v1
- kind: Service
- metadata:
-   name: backend-service
- spec:
-   type: ClusterIP
-   ports:
-    -port: 8080
-     targetPort: 8080
-   selector:
-     app: frontend
+
            
             
             

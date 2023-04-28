@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deploy
+  labels:
+    app: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: ajiqbrainx/backend:1
+          ports:
+            - containerPort: 8080
+
+#Node Port service for the Azure Deployment 
+ apiVersion: apps/v1
+ kind: Service
+ metadata:
+   name: backend-service
+ spec:
+   type: ClusterIP
+   ports:
+    -port: 8080
+     targetPort: 8080
+   selector:
+     app: frontend
+           
+            
+            
